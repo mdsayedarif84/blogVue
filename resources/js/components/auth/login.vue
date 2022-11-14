@@ -17,7 +17,7 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="password" class="col-md-4 col-form-label text-end">Password</label>
+                                <label for="password" class="col-md-4 col-form-label text-end">Password2</label>
                                 <div class="col-md-6">
                                     <input id="password" v-model="form.password" class="form-control" type="password"  name="password" required autocomplete="current-password">
                                 </div>
