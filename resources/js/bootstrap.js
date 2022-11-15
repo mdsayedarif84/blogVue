@@ -2,6 +2,8 @@ import _ from 'lodash';
 window._ = _;
 
 import 'bootstrap';
+import 'admin-lte';
+import '@fortawesome/fontawesome-free';
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
