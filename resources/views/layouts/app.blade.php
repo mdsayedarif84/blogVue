@@ -12,7 +12,17 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-
+    <style>
+        .showPassword {
+            position: relative;
+        }
+        .showPassword i{
+            position: absolute;
+            margin-left: 300px;
+            bottom: 10px;
+            cursor: pointer;
+        }
+    </style>
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>

@@ -1,25 +1,31 @@
 
-
 import './bootstrap';
+window.createApp = 'vue';
 
-// window.Vue = require('vue');
-import { createApp } from 'vue';
-import {createRouter,createWebHashHistory} from 'vue-router';
-const routes = [
-  // { path: '/', component: Home },
-  // { path: '/about', component: About },
-];
-const router = createRouter({
-  history: createWebHashHistory(),
-  routes, // short for `routes: routes`
-})
-const app = createApp({
-  /* root component options */
-});
-
-// import ExampleComponent from './components/ExampleComponent.vue';
-// app.component('example-component', ExampleComponent);
+import {createApp} from 'vue';
+import router from './routes/routes.js';
+// import { createRouter,createWebHistory } from 'vue-router'
+// const routes      =   [
+//     {path   :   '/home',  component: Home },
+//     {path   :   '/add-category', component: Add_category },
+//     {path   :   '/manage-categories',  component: Manage_categories },
+// ];
+// const router = createRouter({
+//     routes,
+//    history: createWebHistory(),
+   
+//  });
 
 
-app.use(router);
-app.mount('#content');
+const App = createApp({});
+
+// import ExampleComponet from './components/ExampleComponet.vue';
+ import Home from '@/components/backend/home.vue';
+ import Add_category from '@/components/backend/category/add-category.vue';
+ import Manage_categories from '@/components/backend/category/manage.vue';
+ App.component('home',Home)
+ App.component('addCategory',Add_category)
+//  App.component('manageCategory',Manage_categories)
+// Vue.component('home',require('./components/backend/home').default);
+App.use(router);
+App.mount('#contents');

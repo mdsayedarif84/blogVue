@@ -4,7 +4,6 @@
         <img src="{{asset('asset/img/AdminLTELogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
         <span class="brand-text font-weight-light">AdminLTE 3</span>
       </a>
-
       <!-- Sidebar -->
       <div class="sidebar">
         <!-- Sidebar user (optional) -->
@@ -16,7 +15,6 @@
             <a href="#" class="d-block">Alexander Pierce</a>
           </div>
         </div>
-
         <!-- SidebarSearch Form -->
         <div class="form-inline">
           <div class="input-group" data-widget="sidebar-search">
@@ -28,74 +26,74 @@
             </div>
           </div>
         </div>
-
         <!-- Sidebar Menu -->
         <nav class="mt-2">
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <!-- Add icons to the links using the .nav-icon class
                 with font-awesome or any other icon font library -->
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <router-link to="/home" class="nav-link">
+                  <i class="nav-icon fas fa-tachometer-alt"></i>
+                  <p>
+                      Dashboard
+                      <i class="right fas fa-angle-left"></i>
+                  </p>
+              </router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="#" class="nav-link">
                 <i class="nav-icon fas fa-tachometer-alt"></i>
                 <p>
-                  Dashboard
+                  Category
                   <i class="right fas fa-angle-left"></i>
                 </p>
-              </a>
+              </router-link>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="../../index.html" class="nav-link">
+                  <router-link to="/add-category" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Dashboard v1</p>
-                  </a>
+                    <p>Add Category</p>
+                  </router-link>
                 </li>
                 <li class="nav-item">
-                  <a href="../../index2.html" class="nav-link">
+                  <router-link to="/manage-categories" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Dashboard v2</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="../../index3.html" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Dashboard v3</p>
-                  </a>
+                    <p>Manage Category</p>
+                  </router-link>
                 </li>
               </ul>
             </li>
-            
-          
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <router-link to="#" class="nav-link">
                 <i class="nav-icon fas fa-book"></i>
                 <p>
-                  Pages
+                  Post
                   <i class="fas fa-angle-left right"></i>
                 </p>
-              </a>
+              </router-link>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="../examples/invoice.html" class="nav-link">
+                  <router-link to="" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Invoice</p>
-                  </a>
+                    <p>Add Post</p>
+                  </router-link>
                 </li>
                 <li class="nav-item">
-                  <a href="../examples/profile.html" class="nav-link">
+                  <router-link to="" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Profile</p>
-                  </a>
+                    <p>Manage post</p>
+                  </router-link>
                 </li>
               </ul>
             </li>
             <li class="nav-item menu-open">
-              <a href="#" class="nav-link active">
+              <router-link href="#" class="nav-link active">
                 <i class="nav-icon far fa-plus-square"></i>
                 <p>
                   Extras
                   <i class="fas fa-angle-left right"></i>
                 </p>
-              </a>
+              </router-link>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
                   <a href="#" class="nav-link">
