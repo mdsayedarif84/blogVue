@@ -14,8 +14,8 @@
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><router-link to="/add-category">Home</router-link></li>
-                        <li class="breadcrumb-item active"><router-link to="/home">Dashboard</router-link></li>
+                        <li class="breadcrumb-item"><router-link to="/add-category">Category</router-link></li>
+                        <li class="breadcrumb-item active"><router-link to="/home">Home</router-link></li>
                     </ol>
                 </div>
             </div>
